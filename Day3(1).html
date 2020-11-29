@@ -1,0 +1,36 @@
+<!-- Create a javascript function that takes an integer and returns whether it's a repeated 
+    one or not print true if it's repeated else print false -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+      
+      const num1 = parseInt(prompt('Enter the first number'));
+      let res = `${num1}`;
+
+      function fun(res,n)
+      {
+          return res.split(n).length-1;
+      }
+      let result = fun(res,'1');
+    document.write("The number of one's in a given number is"+":"+" "+ result );
+    document.write("<br>");
+      if(result>1)
+      {
+          document.write("So,the number is repeated");
+      }
+      else{
+          document.write("So,the number is not repeated");
+      }
+
+   </script>
+
+</body>
+</html>
